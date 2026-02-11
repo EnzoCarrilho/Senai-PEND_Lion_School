@@ -10,17 +10,21 @@ export function router() {
         case "#/alunos":
             app.innerHTML = Alunos();
             pageStyle.href = "css/pages/alunos.css";
-            break;
+        break;
 
         default:
             app.innerHTML = Home();
-            pageStyle.href = "css/pages/home.css";
-
-        const dsButton = document.getElementById("ds")
-        
-        dsButton.addEventListener('click', () => {
-            window.location.hash = "#/alunos"
-        })
+            pageStyle.href = "css/pages/home.css"; 
         
     }
+
+    document.querySelectorAll(".btn-turma").forEach(btn => {
+        btn.addEventListener("click", (e) => {
+          const turmaId = e.target.dataset.id
+          sessionStorage.setItem("turmaId", turmaId)
+          window.location.hash = "#/alunos"
+          
+        })
+        
+    })
 }

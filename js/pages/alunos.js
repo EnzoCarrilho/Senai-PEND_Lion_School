@@ -4,9 +4,10 @@ export function Alunos(){
     `
 }
 
-
 const main = document.getElementById("app")
+const turmaID = sessionStorage.getItem("turmaID")
 
-async function getAllStudats() {
+
+async function getAllStudats(id) {
     
 } 

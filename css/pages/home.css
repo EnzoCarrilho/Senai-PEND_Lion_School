@@ -6,11 +6,11 @@
     padding: 96px;
     flex: 1;
 }
-main p{
+.devices p{
     font-size: 50px;
     color: #000;
 }
-main span{
+.devices span{
     color: #3347B0;
 }
 
