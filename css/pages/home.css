@@ -1,0 +1,49 @@
+
+#app{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 96px;
+    flex: 1;
+}
+main p{
+    font-size: 50px;
+    color: #000;
+}
+main span{
+    color: #3347B0;
+}
+
+.devices{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 80px;
+
+}
+
+.cursos{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 42px;
+}
+
+.cursos button{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-color: #3347B0;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.3);
+}
+
+
+button p{
+    color: #fff;
+    font-size: 64px;
+}
+
+
